@@ -1,0 +1,17 @@
+.tituloH1{
+    font-size: 64px;
+    color: #000000;
+    text-shadow: .5px .5px #808080;
+    
+    font-family: 'Dosis', sans-serif;
+    
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.col-12 {
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: .5px .5px #808080;
+    
+    font-size: 16px;
+}

@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fa;
+    height: 100vh;
+    margin-bottom: 40px; /* Adicionado para acomodar o footer */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(109.6deg, rgb(245, 95, 152) 11.2%, rgb(254, 148, 136) 100.2%);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+
+    background-size: 400% 400%;
+    animation: gradientMove 3s ease infinite;
+}
+
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+    background: radial-gradient(934px at 6% 39.5%, rgb(255, 35, 90) 0.2%, rgb(255, 35, 144) 54.8%, rgb(250, 99, 160) 93.4%);
+
+    border-radius: 64px;
+    box-shadow: 4px 4px #FFFFFF;
+}
+
+header i {
+    font-size: 64px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: 'Merienda', sans-serif;
+    text-shadow: 2px 2px #000000;
+}
+
+footer {
+    background-color: #ffcccb;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+main {
+    background-image: url("../assets/mainIndex.jpg");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    align-items: start;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.paragraphIndex {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 50vw;
+    max-height: 42.5vh;
+
+    padding: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px #000000;
+    border-radius: 5px;
+    text-shadow: .5px .5px #5e5e5e;
+}
+
+form#cadastroForm {
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form#cadastroForm input[type="submit"]{
+    background: green;
+    color: #fff;
+    padding: 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+p {
+    margin: 10px 0;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"],
+input[type="button"],
+button[type="submit"]{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.message {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
